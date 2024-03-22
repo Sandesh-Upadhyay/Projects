@@ -1,0 +1,107 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixed positioning for the header */
+    width: 100%; /* Take up the full width of the viewport */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+#header-img {
+    width: 100px; /* Adjust the logo size */
+    height: auto;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+}
+
+#nav-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sections styling */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Video styling */
+#video {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+#form {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #nav-bar ul {
+        text-align: center; /* Center-align the navigation links */
+    }
+
+    #nav-bar li {
+        display: block;
+        margin: 10px 0;
+    }
+}
